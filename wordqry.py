@@ -20,7 +20,7 @@ sys.setdefaultencoding( "utf-8" )
 class wordqry:
 # 检索word文件并复制到新的word文件
     def FindCopyToWord(self, olePath, newPath, copyData):
-        print "asd"
+        print ("asd")
         findDt = self.testWd(olePath, copyData)
         self.saves(newPath, str(findDt))
 #查找word文档中的某个字段
@@ -29,7 +29,7 @@ class wordqry:
 
         fls = Document(str(selfPath))
         for docxx in fls.paragraphs:
-            print str(selfData)
+            print (str(selfData))
             if str(docxx.text).find(str(selfData)) != -1:
                 textdoc = str(docxx.text)
                 print(docxx.text)
